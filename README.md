@@ -21,3 +21,17 @@ __To execute the shiny app, run below commands in Rstudio:__
 __Team members:__
 - Yi Xu (yix7)
 - Nian Jiang (nianj2)
+<br>
+
+__libraries:__
+- shiny
+- shinydashboard
+- ShinyRatingInput
+- shinyjs
+- recommenderlab
+- data.table
+- Matrix
+- slam
+- dplyr
+- DT
+- reshape2
