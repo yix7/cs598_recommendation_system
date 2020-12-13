@@ -1,7 +1,7 @@
 # CS598 Project 4: Movie Recommendation
 
 
-This movie recommendation system consists of both genre based and collaborative filtering based approaches. User can select which approach to use from the sidebar on the left of dashboard.
+This movie recommendation system consists of both genre based and collaborative filtering based approaches. User can select which approach to use from the sidebar on the left of dashboard. __Note: it may take some time for data to be loaded for the first time launching the app__
 
 - Genre-based Recommendation System:
 
