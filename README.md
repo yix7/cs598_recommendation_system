@@ -12,6 +12,8 @@ This movie recommendation system consists of both genre based and collaborative 
 
   Recommend top10 movies based on the samples ratings gathered from user and user-based-collaborative-filtering (ubcf) model. 
 <br>
+__Please note: models are created by running create_model.R, then the shiny app can just load the created model system1_genre.rds for genre based recommendation and system2_ubcf.rds for ubcf based recommendation.__
+<br>
 
 __To execute the shiny app, run below commands in Rstudio:__
 1. library(shiny)
