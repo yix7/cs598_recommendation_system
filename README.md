@@ -13,11 +13,11 @@ This movie recommendation system consists of both genre based and collaborative 
   Recommend top10 movies based on the samples ratings gathered from user and user-based-collaborative-filtering (ubcf) model. 
 <br>
 
-To execute the shiny app, run below commands in Rstudio:
+__To execute the shiny app, run below commands in Rstudio:__
 1. library(shiny)
 2. runGitHub( "cs598_recommendation_system", "yix7", ref="main")
 <br>
 
-Team members:
+__Team members:__
 - Yi Xu (yix7)
 - Nian Jiang (nianj2)
