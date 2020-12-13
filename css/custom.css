@@ -1,0 +1,31 @@
+.rateitems {
+   padding-left: 5px; 
+   height: 450px; 
+   overflow-y: scroll;
+}
+
+.border-box {
+   padding: 5px;
+}
+
+.btn-warning {
+   color: white; 
+   font-size: 120%;
+}
+
+.main-header .logo {
+  font-family: Calibri, sans-serif, "Times New Roman";
+  font-weight: bold;
+  font-size: 32px;
+}
+
+/* .main-sidebar .sidebar .sidebar-menu .sidebar- {
+  font-family: Calibri, sans-serif, "Times New Roman";
+  font-size: 24px;
+} */
+
+.sidebar .sidebar-menu {
+  font-family: Calibri, sans-serif, "Times New Roman";
+  /* font-weight: bold; */
+  font-size: 24px;
+}
