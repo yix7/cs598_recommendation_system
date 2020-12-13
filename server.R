@@ -214,6 +214,9 @@ shinyServer(function(input, output, session) {
       # predict ratings for other movies for this user
       p1 <- predict(model.ubcf, Rmat_newuser, type="ratings")
       pred_results <- as(p1, "matrix")[, which(!is.na(as(p1, "matrix")))]
+      if (length(pred_results) < 10) {
+        return(data.table(Rank=1))
+      }
       # sort descending, and get top10
       user_results <- sort(pred_results, decreasing = TRUE)[1:10]
       user_predicted_ids <- as.numeric(gsub("m", "", names(user_results)))
@@ -237,6 +240,8 @@ shinyServer(function(input, output, session) {
     
     if (nrow(recom_result) == 0) {
       h3("Please select at least one genre you like.")
+    } else if(nrow(recom_result) < 10) {
+      h3("Not enough ratings to make recommendations, please rate more movies.")
     } else {
     
       lapply(1:num_rows, function(i) {
@@ -265,6 +270,8 @@ shinyServer(function(input, output, session) {
     
     if (nrow(recom_result) == 0) {
       h3("Please rate at least one movie.")
+    } else if(nrow(recom_result) < 10) {
+      h3("Not enough ratings to make recommendations, please rate more movies.")
     } else {
       
       lapply(1:num_rows, function(i) {
